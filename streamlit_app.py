@@ -1,8 +1,6 @@
 import streamlit as st
 from st_functions import st_button, load_css
 from PIL import Image
-import base64
-
 
 load_css()
 
@@ -23,21 +21,3 @@ st_button('twitter', 'https://twitter.com/thedataprof/', 'Follow me on Twitter',
 st_button('linkedin', 'https://www.linkedin.com/in/chanin-nantasenamat/', 'Follow me on LinkedIn', icon_size)
 st_button('newsletter', 'https://sendfox.com/dataprofessor/', 'Sign up for my Newsletter', icon_size)
 st_button('cup', 'https://www.buymeacoffee.com/dataprofessor/', 'Buy me a Coffee', icon_size)
-
-   def add_bg_from_local(image_file):
-            with open(image_file, "rb") as image_file:
-                encoded_string = base64.b64encode(image_file.read())
-            st.markdown(
-                f"""
-            <style>
-            .stApp {{
-                background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
-                background-size: cover
-            }}
-            </style>
-            """,
-                unsafe_allow_html=True
-            )
-
-
-        add_bg_from_local('Watch more bg fo more.jpg')
