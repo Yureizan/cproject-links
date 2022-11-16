@@ -9,9 +9,9 @@ st.write("[![Star](https://img.shields.io/github/stars/dataprofessor/links.svg?l
 col1, col2, col3 = st.columns(3)
 col2.image(Image.open('dp.png'))
 
-st.header('Chanin Nantasenamat, Ph.D.')
+st.header('Choose the streaming platform you want movie recommendations for')
 
-st.info('Developer Advocate, Content Creator and ex-Professor with an interest in Data Science and Bioinformatics')
+st.info('The most common question that the average multimedia consumer asks themselves is “what should I watch tonight?”. If you’re in the mood for a movie instead of a tv serial, MO-RE will recommend you movies that match your taste from the streaming services of Netflix, Amazon and Disney + ')
 
 icon_size = 20
 
