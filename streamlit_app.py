@@ -8,7 +8,7 @@ load_css()
 
 
 col1, col2, col3 = st.columns(3)
-col2.image(Image.open('dp.png'))
+col2.image(Image.open('Watch more bg2'))
 
 st.header('Choose the streaming platform you want movie recommendations for')
 
